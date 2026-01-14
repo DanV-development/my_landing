@@ -1,4 +1,4 @@
-/* --------------------------- General styles --------------------------- */
+/* --------------------------- General --------------------------- */
 @font-face {
     font-family: popins-semi-bold;
     src: url(fonts/popins/Poppins-SemiBold.ttf);
@@ -29,14 +29,41 @@ body {
     background-color: #FBF8CC;
 }
 
-/* --------------------------- Navbar styles --------------------------- */
+h1 {
+    font-family: popins-extraBold;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 116px;
+    letter-spacing: 0;
+    vertical-align: bottom;
+}
+
+p {
+    font-family: popins-regular;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+    letter-spacing: 0;
+    color: #03045E;
+}
+
+h4 {
+    font-family: popins-semi-bold;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0;
+    color: #03045E;
+}
+
+/* --------------------------- Navbar --------------------------- */
 #brand {
     width: max-content;
     font-family: popins-semi-bold;
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #03045E;
 }
 
@@ -51,7 +78,7 @@ nav a {
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #03045E;
 }
 
@@ -78,9 +105,10 @@ nav a {
     height: 24px;
 }
 
-/* --------------------------- Hero section styles --------------------------- */
-#hero {
+/* --------------------------- Hero section --------------------------- */
+#hero, #about {
     height: 100vh;
+    padding-left: 200px;
 }
 
 .hero-image-wrap {
@@ -113,10 +141,6 @@ nav a {
     width: max-content;
 }
 
-.hero-left-side {
-    padding-left: 200px;
-}
-
 .hero-right-side {
     margin-left: auto;
     padding-right: 200px;
@@ -135,17 +159,11 @@ nav a {
     font-weight: 500;
     font-size: 28px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #03045E;
 }
 
 .hero-text-content h1 {
-    font-family: popins-extraBold;
-    font-weight: 800;
-    font-size: 100px;
-    line-height: 116px;
-    letter-spacing: 0%;
-    vertical-align: bottom;
     color: #03045E;
 }
 
@@ -173,7 +191,7 @@ nav a {
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     background-color: transparent;
     cursor: pointer;
     z-index: 2;
@@ -185,4 +203,54 @@ nav a {
     top: 7px;
     left: 6px;
     z-index: 1;
+}
+
+.decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.decoration img {
+    position: relative;
+}
+
+#pluses {
+    left: 90%;
+}
+
+#slashes {
+    top: 65%;
+    right: 17%;
+    z-index: 1;
+}
+
+
+/* --------------------------- Navbar --------------------------- */
+
+.about-main-content {
+    width: 900px;
+}
+
+.about-main-content h1 {
+    color: #F7F197;
+    padding-bottom: 32px;
+}
+
+.about-experience {
+    padding-top: 65px;
+    margin-left: 350px;
+    width: 900px;
+}
+
+.timeline {
+    list-style-image: url("img/list-image.svg");
+}
+
+.timeline-item {
+    padding-top: 80px;
+}
+
+.timeline-date, .timeline-item p {
+    padding-left: 18px;
 }
